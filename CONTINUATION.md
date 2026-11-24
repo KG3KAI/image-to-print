@@ -32,3 +32,8 @@
 
 ## 下一段开场白
 > 读本仓库的 CONTINUATION.md，我已设置 HF_TOKEN（或 MESHY_API_KEY），用 work/cat.png 跑通 image-to-print 全流程。
+
+## Git 身份规则（2026-11-24）
+- GitHub 仓库自动使用 `~/.gitconfig-github-kg3kai`（KG3KAI noreply），由 `~/.gitconfig` 的 includeIf 按 remote URL 匹配
+- 推送到 github.com 时，`~/.config/git/hooks/pre-push` 会拦截带 xiaomi.com / xukai15 的提交
+- 公司仓库（git.n.xiaomi.com）仍用 xukai15，不受影响
